@@ -17,11 +17,8 @@ Master in Artificial Intelligence and Robotics
 
 **Explanation**: https://colab.research.google.com/drive/1tXWff_-Qo26pMGFL4drWZGvGLJYSdc0u?usp=sharing
 
-To run the notebook you just have to open the **"TransInpainter.ipynb"** file and run each cell sequentially. If the error "*Your session crashed after using all available RAM*" while running is encountered, then you can: 
-1) use this link to access to the already existing notebook on kaggle: 
-2) download the notebook and run it locally (after checking if the dependencies requested are already installed)
+To run the notebook you just have to open the **"TransInpainter.ipynb"** file and run each cell sequentially. Ensure you have put the accelerator on. 
 
-Moreover, the file **Project_Info.ipynb** contains the description of the implementation and methods used to recreate the paper **"Trans-Inpainter: Wireless Channel Information-
-Guided Image Restoration via Multimodal Transformer"**.
+Moreover, the file **Project_Info.ipynb** contains the description of the implementation and methods used to recreate the paper **"Trans-Inpainter: Wireless Channel Information-Guided Image Restoration via Multimodal Transformer"**.
 
 All the files mentioned are visible in this repository.
