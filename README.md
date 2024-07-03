@@ -14,10 +14,30 @@ Master in Artificial Intelligence and Robotics
 
 
 # Getting Started
-To run the notebook, you just have to open the **"transinpainter-final.ipynb"** file and run each cell sequentially. Ensure you have put the accelerator on.
+
+To run the notebook: 
+
+1) [recommended] open the link above (in the table) and run each cell of the notebook sequentially
+
+2) 
+
+- Open Terminal or Command Prompt:
+
+- Navigate to Your Desired Directory:
+```bash
+cd ~  # Change this to the directory where you want to clone the repository
+```
+
+- Clone the Repository:
+```bash
+git clone https://github.com/alessiapontiggia/NN-project
+```
+
+- Run the file ```transinpainter_final.ipynb``` (in ```./code/```)
+
 
 # Project Info
-The file **"Project_Info.ipynb"** contains the description of the implementation and methods used to recreate the paper **"Trans-Inpainter: Wireless Channel Information-Guided Image Restoration via Multimodal Transformer"**.
+The file **"Project_Info.ipynb"** contains the description of the implementation and methods used to recreate the paper **"Trans-Inpainter: Wireless Channel Information-Guided Image Restoration via Multimodal Transformer"**. The same description is reported below:
 
 # Technology
 The project has been run with GPU P100 free version available on Kaggle.
