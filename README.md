@@ -270,13 +270,13 @@ The training phase consists of:
 
 | **Parameter**               | **Value**                                                                 |
 |-----------------------------|---------------------------------------------------------------------------|
-| **Number of Epochs**        | 100                                                                       |
-| **Learning Rate**           | 0.001                                                                     |
-| **Loss**                    | Mean Squared Error                                                        |
-| **Optimizer**               | Adam                                                                      |
-| **Scheduler**               | Exponential LR with γ=0.9                                                 |
-| **Batch Size**              | 16                                                                        |
-| **Regularization Technique**| Early Stopping set with patience = 5 on the validation loss               |
+| Number of Epochs       | 100                                                                       |
+| Learning Rate           | 0.001                                                                     |
+| Loss             | Mean Squared Error                                                        |
+| Optimizer               | Adam                                                                      |
+| **Scheduler               | Exponential LR with γ=0.9                                                 |
+| Batch Size              | 16                                                                        |
+| Regularization Technique| Early Stopping set with patience = 5 on the validation loss               |
 
 Here some plots of the groundthruth and inpainted images at different (increasing by 5) epochs.
 
@@ -308,9 +308,9 @@ The metrics used to evaluate the performances on the test set are:
 
 | **Metric**          | **Value**               |
 |---------------------|-------------------------|
-| **Average Loss**    | 0.011529496780806971    |
-| **Average SSIM**    | 0.8438719900012611      |
-| **Average PSNR**    | 19.407058167993924      |
+| Average Loss    | 0.011529496780806971    |
+| Average SSIM    | 0.8438719900012611      |
+| Average PSNR    | 19.407058167993924      |
 
 You can also find some test inpainted images below:
 
