@@ -49,7 +49,7 @@ The "simulation" of the CSI is thought as the occluded part that should have bee
 ![csi_simulated image](images/3.png)
 
 
-Architecture
+# Architecture
 The replicated architecture is the following:
 
 ![architecture](images/4.png)
@@ -64,7 +64,7 @@ embed_dim = 256 (not 1000)
 M = 1 (not 3)
 As the above figure shows, the architecture of the TransInpainterModel has six main components:
 
-The Patch_Encoder_CSI:
+- **The Patch_Encoder_CSI**:
 
       Input Tensor (16x3x32x10)
              │
@@ -77,7 +77,8 @@ The Patch_Encoder_CSI:
              │
              ▼
       Output Tensor (16x3x32x256)
-The EncodingLayer_CSI:
+
+- **The EncodingLayer_CSI**:
 
       Input Tensor (16x3x32x256)
              │
@@ -125,7 +126,8 @@ The EncodingLayer_CSI:
             |
             ▼
     Final Output (16x3x32x256)
-The Patch_Encoder_Mask:
+
+- **The Patch_Encoder_Mask**:
 
       Input Tensor (16x3x32x32)
              │
@@ -138,12 +140,12 @@ The Patch_Encoder_Mask:
              │
              ▼
       Output Tensor (16x3x32x256)
-The EncoderLayer_Mask:
+
+- **The EncoderLayer_Mask**:
 
         Input Tensor (16x3x32x256)
                     │
                     ▼
-+--------------------------------------------+
 |            SwinTransformerBlock            |
 |                                            |
 |           Input: (16x3x32x256)             |
@@ -172,8 +174,8 @@ The EncoderLayer_Mask:
 |                     │                      |
 |                     ▼                      |
 |          Output: (16, 784)                 |
-+--------------------------------------------+
-The Aggregation Layer:
+
+- **The Aggregation Layer**:
 
   Input Tensors
   (encoded_csi: 16x3x32x256,
@@ -181,7 +183,6 @@ The Aggregation Layer:
   mask: 16x3x32x32)
       │
       ▼
-  +-------------------+
   |  AggregationLayer |
   |                   |
   |  +-------------+  |
@@ -222,14 +223,13 @@ The Aggregation Layer:
   |        ▼          |
   |  Output Tensor   |
   |  (16x5x28x28)    |
-  +-------------------+
-The Decoder Layer:
+
+- **The Decoder Layer**:
 
   Input Tensor
   (16, 5, 28, 28)
       │
       ▼
-  +----------------+
   |  DecoderLayer  |
   |                |
   |  +----------+  |
@@ -262,45 +262,60 @@ The Decoder Layer:
   |       ▼        |
   | Output Tensor  |
   | (16, 3, 32, 32)|
-  +----------------+
-Training and Validation
+ 
+
+# Training and Validation
+
 The training phase consists of:
 
-number of epochs: 100
-learning rate: 0.001
-loss: Mean Squared Error
-optimizer: Adam
-scheduler: Exponential LR with γ=0.9
-batch_size: 16
-regularization technique: Early Stopping set with patience = 5 on the validation loss
+| **Parameter**               | **Value**                                                                 |
+|-----------------------------|---------------------------------------------------------------------------|
+| **Number of Epochs**        | 100                                                                       |
+| **Learning Rate**           | 0.001                                                                     |
+| **Loss**                    | Mean Squared Error                                                        |
+| **Optimizer**               | Adam                                                                      |
+| **Scheduler**               | Exponential LR with γ=0.9                                                 |
+| **Batch Size**              | 16                                                                        |
+| **Regularization Technique**| Early Stopping set with patience = 5 on the validation loss               |
+
 Here some plots of the groundthruth and inpainted images at different (increasing by 5) epochs.
 
 Epoch: 0:
-train_0.png
+
+![train](images/train_0.png)
 
 Epoch: 5
-train_5.png
+
+![train](images/train_5.png)
+
 
 Epoch: 10
-train_10.png
+
+![train](images/train_10.png)
 
 Epoch: 15:
-train_15.png
+
+![train](images/train_15.png)
+
 
 Epoch: 20:
-train_20.png
 
-Test and Results
+![train](images/train_20.png)
+
+
+# Test and Results
 The metrics used to evaluate the performances on the test set are:
 
-Average loss: 0.011529496780806971
-Average ssim: 0.8438719900012611
-Average PSNR: 19.407058167993924
+| **Metric**          | **Value**               |
+|---------------------|-------------------------|
+| **Average Loss**    | 0.011529496780806971    |
+| **Average SSIM**    | 0.8438719900012611      |
+| **Average PSNR**    | 19.407058167993924      |
+
 You can also find some test inpainted images below:
 
-test_2.png
+![test1](images/test_2.png)
 
-test_6.png
+![test2](images/test_6.png)
 
-test_3.png
-
+![test3](images/test_3.png)
