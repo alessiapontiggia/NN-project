@@ -9,7 +9,7 @@ Master in Artificial Intelligence and Robotics
 | **Course**    | Neural Networks                                                                                                                                  |
 | **Professor** | Danilo Comminiello, Simone Scardapane                                                                                                            |
 | **Paper**     | [Paper on arXiv](https://arxiv.org/abs/2305.05385)                                                                                               |
-| **Code**      | [Kaggle Code](https://www.kaggle.com/code/alessiapontiggia/transinpainter-final) |
+| **Code**      | [Kaggle Notebook](https://www.kaggle.com/code/alessiapontiggia/transinpainter-final) |
 | **Explanation** | [Explanation on Google Colab](https://colab.research.google.com/drive/1tXWff_-Qo26pMGFL4drWZGvGLJYSdc0u?usp=sharing)                                                                  |
 
 
@@ -17,7 +17,7 @@ Master in Artificial Intelligence and Robotics
 
 To run the notebook: 
 
-1) [recommended] open the link above (in the table) and run each cell of the notebook sequentially
+1) [recommended] open the [link](https://www.kaggle.com/code/alessiapontiggia/transinpainter-final) and run each cell of the notebook sequentially
 
 2) 
 
