@@ -8,9 +8,9 @@ Master in Artificial Intelligence and Robotics
 | **Authors**   | Alessia Pontiggia (1892079), Gerardo Paladino (1918178)                                                                                          |
 | **Course**    | Neural Networks                                                                                                                                  |
 | **Professor** | Danilo Comminiello, Simone Scardapane                                                                                                            |
-| **Paper**     | [file](paper/paper.pdf)                                                                                               |
+| **Paper**     | [File](paper/paper.pdf)                                                                                               |
 | **Code**      | [Kaggle Notebook](https://www.kaggle.com/code/alessiapontiggia/transinpainter-final) |
-| **Explanation** | [Explanation on Google Colab](https://colab.research.google.com/drive/1tXWff_-Qo26pMGFL4drWZGvGLJYSdc0u?usp=sharing)                                                                  |
+| **Explanation** | [Description](https://colab.research.google.com/drive/1tXWff_-Qo26pMGFL4drWZGvGLJYSdc0u?usp=sharing)                                                                  |
 
 
 # Getting Started
