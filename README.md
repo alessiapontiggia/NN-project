@@ -348,6 +348,11 @@ Epoch: 20:
 
 ![train](images/train_20.png)
 
+The loss on training and validation sets are reported below:
+
+![train_loss](images/training_loss.png)
+
+![val_loss](images/val_loss.png)
 
 # Test and Results
 The metrics used to evaluate the performances on the test set are:
