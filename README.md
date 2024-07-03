@@ -37,20 +37,23 @@ Due to high memory usage ("Your session crashed after using all available RAM" w
 
 The "original" images of the dataset are used as groundthruth for the model. The original images have shape 3x32x32 and the form:
 
-![original image](1.png)
+![original image](images/1.png)
 
 The "defective" images which have to be reconstructed are obtained by applying a mask of size 10 on the original ones. The defective images are taken as input for the model. The defective images have shape 3x32x32 and the form:
 
-masked.png
+![masked image](images/2.png)
+
 
 The "simulation" of the CSI is thought as the occluded part that should have been captured by the cameras and processed as wifi signal. In our case it is simply the excluded part by the mask. The "simulated" csi images are used as input of the model, together with the defective ones. The "simulated" csi images have shape 3x32x10 and the form:
 
-csi_simulation.png
+![csi_simulated image](images/3.png)
+
 
 Architecture
 The replicated architecture is the following:
 
-image.png
+![architecture](images/4.png)
+
 
 We tried being as faithful as possible to this implementation.
 
