@@ -320,7 +320,7 @@ The training phase consists of:
 | Learning Rate           | 0.001                                                                     |
 | Loss             | Mean Squared Error                                                        |
 | Optimizer               | Adam                                                                      |
-| **Scheduler               | Exponential LR with γ=0.9                                                 |
+| Scheduler               | Exponential LR with γ=0.9                                                 |
 | Batch Size              | 16                                                                        |
 | Regularization Technique| Early Stopping set with patience = 5 on the validation loss               |
 
