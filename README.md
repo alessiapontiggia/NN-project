@@ -37,7 +37,7 @@ git clone https://github.com/alessiapontiggia/NN-project
 
 
 # Project Info
-The file **"Project_Info.ipynb"** contains the description of the implementation and methods used to recreate the paper **"Trans-Inpainter: Wireless Channel Information-Guided Image Restoration via Multimodal Transformer"**. The same description is reported below:
+The file ```Project_Info.pdf``` contains the description of the implementation and methods used to recreate the paper **"Trans-Inpainter: Wireless Channel Information-Guided Image Restoration via Multimodal Transformer"**. The same description is reported below:
 
 # Technology
 The project has been run with GPU P100 free version available on Kaggle.
