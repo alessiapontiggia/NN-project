@@ -79,9 +79,10 @@ We tried being as faithful as possible to this implementation.
 
 The only things we changed are:
 
-num_heads = 2 (not 3)
-embed_dim = 256 (not 1000)
-M = 1 (not 3)
+- num_heads = 2 (not 3)
+- embed_dim = 256 (not 1000)
+- M = 1 (not 3)
+
 As the above figure shows, the architecture of the TransInpainterModel has six main components:
 
 
